@@ -1,0 +1,1 @@
+P'tit readme temporaire parce qu'il en faut un mais quand j'aurai de l'inspiration je le remplirai promis
