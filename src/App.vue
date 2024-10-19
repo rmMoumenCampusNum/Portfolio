@@ -1,9 +1,10 @@
 <script setup>
+import Caroussel from '../src/components/Caroussel.vue'
 
 </script>
 
 <template>
-<h1>Bonjour</h1>
+  <Caroussel/>
 </template>
 
 <style scoped>
