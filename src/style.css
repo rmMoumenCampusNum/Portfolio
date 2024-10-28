@@ -2,33 +2,7 @@ body {
 background-color: black
 }
 
-.setTitle {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-h1 {
-    color: white;
-    font-family: "Afacad Flux", sans-serif;
-    font-size: 8rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 40%;
-    border: solid;
-    border-color: darkviolet;
-    border-radius: 10px;
+* {
+    box-sizing: border-box;
 }
 
-.left {
-    align-self: flex-start;
-    margin:20px;
-    margin-left: 50px;
-
-}
-
-.right {
-    align-self: flex-end;
-    margin:20px;
-    margin-right: 50px;
-}
