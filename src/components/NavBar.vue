@@ -2,10 +2,10 @@
     <transition name="fade">
 <div v-if="isVisible" class="navBar">
 <ul>
-  <li>Contact</li>
-  <li>CV</li>
-  <li>Projets</li>
-  <li>Technos</li>
+  <router-link to="/contact"><li>Contact</li></router-link>
+  <router-link to="/cv"><li>CV</li></router-link>
+  <router-link to="/projets"><li>Projets</li></router-link>
+  <router-link to="/technos"><li>Technos</li></router-link>
 </ul>
 </div>
 </transition>
@@ -33,6 +33,11 @@ mounted() {
   margin-left: 20px;
   margin-right: 20px;
   height: 78px;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: inherit; /* Prend la couleur du parent */
 }
 
 .navBar li{
@@ -64,4 +69,6 @@ border-radius: 10px;
 .fade-enter-from, .fade-leave-to {
   opacity: 0; /* L'élément est invisible avant l'animation */
 }
+
+
 </style>

@@ -2,14 +2,17 @@
 <NavBar/>
 <transition name="fade">
 <div v-if="isVisible" class="setTitle">
+  <RouterLink to="/" class="titleLink">
 <h1>
 <span class="left">Portfolio</span>
 <span class="right">Moumen</span>
 </h1>
+</RouterLink>
 </div>
 </transition>
-<Presentation/>
-<RouterView/>
+<transition name="fade">
+<router-view/>
+</transition>
 </template>
 
 <script>
@@ -44,6 +47,12 @@ components: {
   justify-content: center;
   width: 100%;
 }
+
+a {
+  text-decoration: none;
+
+}
+
 h1 {
   color: white;
   font-family: "Afacad Flux", sans-serif;
@@ -51,7 +60,7 @@ h1 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 40%;
+  width: 700px;
   border: solid;
   border-color: darkviolet;
   border-radius: 10px;
@@ -72,16 +81,12 @@ h1 {
 }
 
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 2s ease; /* Durée de 2s pour la transition */
+  transition: opacity 0.5s ease; /* Durée de 1s pour la transition */
 }
 .fade-enter-from, .fade-leave-to {
   opacity: 0; /* L'élément est invisible avant l'animation */
 }
 
-.presentation {
-  display: flex;
-  justify-content: center;
-  color: white;
-}
+
 
 </style>
