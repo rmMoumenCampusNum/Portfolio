@@ -9,10 +9,12 @@
 </div>
 </transition>
 <Presentation/>
+<RouterView/>
 </template>
 
 <script>
 
+import { RouterView } from 'vue-router';
 import NavBar from './components/NavBar.vue';
 import Presentation from './components/Presentation.vue';
 
