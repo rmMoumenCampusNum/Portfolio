@@ -9,7 +9,7 @@
 
 </script>
 
-<style>
+<style scoped>
 .presentation {
   color: white;
   display: flex;

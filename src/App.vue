@@ -53,7 +53,7 @@ a {
 
 }
 
-h1 {
+.setTitle h1 {
   color: white;
   font-family: "Afacad Flux", sans-serif;
   font-size: 5rem;
@@ -80,8 +80,12 @@ h1 {
   margin-right: 100px;
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.5s ease; /* Durée de 1s pour la transition */
+.fade-enter-active {
+  transition: opacity 1s ease; /* Durée de 1s pour la transition */
+}
+
+.fade-leave-active{
+  transition: opacity 0.4s ease; /* Durée de 1s pour la transition */
 }
 .fade-enter-from, .fade-leave-to {
   opacity: 0; /* L'élément est invisible avant l'animation */
