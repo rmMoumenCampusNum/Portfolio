@@ -17,7 +17,7 @@
   flex-direction: column;
   align-items: center;
   font-family: "Afacad Flux", sans-serif;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .presentation p {

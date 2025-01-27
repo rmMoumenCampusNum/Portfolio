@@ -84,13 +84,9 @@ a {
   transition: opacity 1s ease; /* Durée de 1s pour la transition */
 }
 
-.fade-leave-active{
-  transition: opacity 0.4s ease; /* Durée de 1s pour la transition */
-}
 .fade-enter-from, .fade-leave-to {
   opacity: 0; /* L'élément est invisible avant l'animation */
 }
-
 
 
 </style>

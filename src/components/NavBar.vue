@@ -63,12 +63,6 @@ border-radius: 10px;
   padding-left: 0;
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 3s ease; /* Durée de 3s pour la transition */
-}
-.fade-enter-from, .fade-leave-to {
-  opacity: 0; /* L'élément est invisible avant l'animation */
-}
 
 
 </style>

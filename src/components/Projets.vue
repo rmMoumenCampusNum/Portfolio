@@ -1,14 +1,19 @@
 <template>
-    <h1>Projets Réalisés</h1>
-    <div class="cardsProjets">
-    <div v-for:="project in projects" class="projets">
-        <p>{{project.name}}</p>
-        <p>{{project.description}}</p>
-        <a target="_blank" :href="project.lien"><p>Ici</p></a>
-        <img :src="getImage(project.image)" alt="Projet">
+  <transition name="fade">
+    <div v-if="isVisible">
+      <h1>Projets Réalisés</h1>
+      <div class="cardsProjets">
+        <div v-for="project in projects" :key="project.name" class="projets">
+          <p>{{ project.name }}</p>
+          <p>{{ project.description }}</p>
+          <a target="_blank" :href="project.lien"><p>GitHub</p></a>
+          <img :src="getImage(project.image)" alt="Projet">
+        </div>
+      </div>
     </div>
-</div>
+  </transition>
 </template>
+
 
 <script>
 export default {
@@ -31,14 +36,20 @@ export default {
                     lien:"https://github.com/rmMoumenCampusNum/Dungeons-Dragons",
                     image: "donjonDragon.png"
                 }
-            ]
+            ],
+            isVisible: false
         };
+        
     },
     methods: {
         getImage(imageName) {
-            return new URL(`../assets/images/${imageName}`, import.meta.url).href;
+            return new URL(`../assets/${imageName}`, import.meta.url).href;
         }
-    }
+    },
+    mounted() {
+  // Rend l'élément visible dès que le composant est monté
+  this.isVisible = true;
+}
 }
 </script>
 
@@ -62,18 +73,28 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 410px;
+    border-bottom: 2px solid #ffffff90;
+    border-right: 2px solid #ffffff90;
+    box-shadow: 10px 10px 50px #9400d3;
+
 }
 
 .projets img {
-    width: 400px;
+    width: 409px;
     height: 400px;
 }
 
-p {
+.projets a {
+    text-decoration: none;
+}
+
+.cardsProjets p {
     color: white;
     font-family: "Afacad Flux", sans-serif;
     font-size: 1.5em;
     text-align: center;
 }
+
 
 </style>
