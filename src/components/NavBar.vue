@@ -28,8 +28,6 @@ mounted() {
 <style scoped>
 .navBar{
   border-bottom: solid darkviolet;
-  border-right: solid darkviolet;
-  border-radius: 10px;
   margin-left: 20px;
   margin-right: 20px;
   height: 78px;

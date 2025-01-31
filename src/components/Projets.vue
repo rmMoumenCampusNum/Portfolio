@@ -22,7 +22,7 @@ export default {
             projects: [
                 {
                     name: "REZ GAMES",
-                    description: "Site e-commerce de jeux-vidéos retro et pièces de collection",
+                    description: "Site e-commerce de jeux-vidéos retro et de pièces de collection",
                     lien: "https://github.com/rmMoumenCampusNum/REZ_GAMES",
                     image:"rezGames.png"
                 }, {
@@ -53,7 +53,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 h1 {
     color: white;
@@ -77,12 +77,18 @@ h1 {
     border-bottom: 2px solid #ffffff90;
     border-right: 2px solid #ffffff90;
     box-shadow: 10px 10px 50px #9400d3;
+    border-radius: 10px;
 
 }
 
+.projets:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
 .projets img {
-    width: 409px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
 }
 
 .projets a {
@@ -94,6 +100,7 @@ h1 {
     font-family: "Afacad Flux", sans-serif;
     font-size: 1.5em;
     text-align: center;
+    padding: 5px;
 }
 
 

@@ -2,7 +2,7 @@
 <NavBar/>
 <transition name="fade">
 <div v-if="isVisible" class="setTitle">
-  <RouterLink to="/" class="titleLink">
+<RouterLink to="/" class="titleLink">
 <h1>
 <span class="left">Portfolio</span>
 <span class="right">Moumen</span>
