@@ -27,7 +27,7 @@ export default {
                     image:"rezGames.png"
                 }, {
                     name: "FindMyCar",
-                    description: "Site microservice de location de voitures (microservice 'users')",
+                    description: "Site de location de voitures (microservice 'users')",
                     lien: "https://github.com/rmMoumenCampusNum/microservice-users",
                     image: "findMyCar.png"
                 },{
@@ -47,7 +47,7 @@ export default {
         }
     },
     mounted() {
-  // Rend l'élément visible dès que le composant est monté
+  
   this.isVisible = true;
 }
 }
@@ -74,11 +74,11 @@ h1 {
     flex-direction: column;
     align-items: center;
     width: 410px;
-    border-bottom: 2px solid #ffffff90;
-    border-right: 2px solid #ffffff90;
+    border-bottom: 4px solid #ffffff90;
+    border-right: 4px solid #ffffff90;
     box-shadow: 10px 10px 50px #9400d3;
     border-radius: 10px;
-
+    overflow: hidden;
 }
 
 .projets:hover {
