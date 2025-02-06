@@ -1,5 +1,5 @@
 <template>
-    <h2>Développeur Web en recherche d'un contrat d'apprentissage</h2>
+    <h1>Développeur Web en recherche d'un contrat d'apprentissage</h1>
     <div class="cv">
         <div class="contact">
             <div class="contactTitle">
@@ -82,6 +82,12 @@
             <p>2019 - 2020</p>
             <p>Conseil client - Acheminement des commandes aux clients - Réapprovisionnement des rayons</p>
         </div>
+    <div class="formations">
+        <h2>Formations</h2>
+        <span>2024 - 2026 - BAC + 3 Concepteur Développeur d'Applications</span>
+        <p>2024 : Première année de formation en présentiel</p>
+        <span>2016 - 2019 - BAC PRO Commerce </span>
+    </div>
 
     </div>
     <font-awesome-icon icon="download" class="fa-icon-dl" @click="downloadPdf" />
@@ -102,6 +108,20 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+    color: white;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+span {
+    color: white;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 .cv {
     display: flex;
     justify-content: space-between;
@@ -113,11 +133,17 @@ export default {
     flex-shrink: 25;
 }
 
+.cv > *:last-child:nth-child(odd){
+    margin: 0 auto;
+}
+
 h2 {
     color: white;
     font-family: "Afacad Flux", sans-serif;
     font-size: 3em;
     text-align: center;
+    border-bottom: solid darkviolet;
+    width: 100%;
 }
 
 p {
@@ -126,11 +152,6 @@ p {
     font-size: 1.5em;
 }
 
-.contactTitle h2 {
-    width: 100%;
-    text-align: center;
-    border-bottom: solid darkviolet;
-}
 
 .contact div {
     display: flex;
@@ -163,17 +184,7 @@ p {
     flex-direction: column;
 }
 
-.competencesTitle h2 {
-    border-bottom: solid darkviolet;
-    margin-bottom: 55px;
-}
 
-.competences span {
-    color: white;
-    font-family: "Afacad Flux", sans-serif;
-    font-size: 1.5em;
-    font-weight: bold;
-}
 
 .softsSkills {
     display: flex;
@@ -182,9 +193,6 @@ p {
     width: 400px;
 }
 
-.softsSkills h2 {
-    border-bottom: solid darkviolet;
-}
 
 .softsSkillsList {
     display: flex;
@@ -203,22 +211,7 @@ li {
     width: 523px;
 }
 
-.experiencesProTitle h2 {
-    border-bottom: solid darkviolet;
 
-}
-
-.experiencesPro span {
-    color: white;
-    font-family: "Afacad Flux", sans-serif;
-    font-size: 1.5em;
-    font-weight: bold;
-
-}
-
-.centresInteretTitle h2 {
-    border-bottom: solid darkviolet;
-}
 
 .centresInteretList {
     display: flex;
@@ -233,4 +226,7 @@ li {
     text-align: center;
     list-style: none;
 }
+
+
+
 </style>
